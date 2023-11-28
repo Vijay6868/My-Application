@@ -20,10 +20,22 @@
         android:id="@+id/btnHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onBtnClick"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMessage"
-        android:onClick="onBtnClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/edTxtName" />
+
+    <EditText
+        android:id="@+id/edTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
 </androidx.constraintlayout.widget.ConstraintLayout>
